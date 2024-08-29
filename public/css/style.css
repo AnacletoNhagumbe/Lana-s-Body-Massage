@@ -156,6 +156,141 @@
 #searchModal .modal-content {
     background: rgba(250, 250, 250, .6);
 }
+
+/* Mobile devices (up to 767px) */
+@media (max-width: 767px) {
+    /* Navbar adjustments */
+    .navbar .navbar-nav .nav-link {
+        padding: 8px 10px;
+        font-size: 14px; 
+    }
+
+    .navbar .navbar-collapse {
+        /* Ensure the navbar collapses into a hamburger menu */
+        display: none; 
+    }
+
+    .navbar .navbar-toggler {
+        display: flex; 
+    }
+
+    /* When the menu is open */
+    .navbar .navbar-collapse.show {
+        display: block; 
+    }
+
+    /* Dropdown menu adjustments */
+    .navbar .dropdown-menu {
+        position: static; 
+        transform: none;
+        visibility: visible; 
+        opacity: 1;
+        background: var(--bs-light);
+        transition: .5s; 
+    }
+
+    /* Carousel adjustments */
+    .carousel-item img {
+        height: auto; 
+    }
+
+    /* Button adjustments */
+    .btn-square, .btn-sm-square, .btn-md-square, .btn-lg-square {
+        width: 40px; 
+        height: 40px;
+    }
+
+    /* Topbar adjustments */
+    .sticky-top {
+        padding: 5px 0; 
+    }
+
+    .back-to-top {
+        bottom: 20px; 
+        right: 20px;
+    }
+
+    /* Services items */
+    .services .services-item {
+        margin: 10px 0; 
+    }
+
+    /* Testimonial section adjustments */
+    .testimonial .owl-carousel.testimonial-carousel .owl-nav {
+        font-size: 30px; 
+    }
+
+    /* Contact form */
+    .contact .contact-form {
+        padding: 10px; 
+    }
+}
+
+/* Tablets and larger mobile devices (768px to 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+    /* Navbar adjustments */
+    .navbar .navbar-nav .nav-link {
+        padding: 10px 12px; 
+        font-size: 15px; 
+    }
+
+    /* Dropdown menu adjustments */
+    .navbar .dropdown-menu {
+        position: absolute; 
+        transform: none; 
+        visibility: hidden; 
+        opacity: 0;
+    }
+
+    .navbar .nav-item:hover .dropdown-menu {
+        visibility: visible; 
+        opacity: 1;
+    }
+
+    /* Carousel adjustments */
+    .carousel-item img {
+        height: 80vh; 
+    }
+
+    /* Button adjustments */
+    .btn-square, .btn-sm-square, .btn-md-square, .btn-lg-square {
+        width: 48px; 
+        height: 48px;
+    }
+
+    /* Topbar adjustments */
+    .sticky-top {
+        padding: 10px 0; 
+    }
+
+    .back-to-top {
+        bottom: 25px; 
+        right: 25px;
+    }
+
+    /* Services items */
+    .services .services-item {
+        margin: 20px 0; 
+    }
+
+    /* Team section adjustments */
+    .team .team-item .team-social {
+        top: 20px; 
+        left: 20px;
+    }
+
+    /* Testimonial section adjustments */
+    .testimonial .owl-carousel.testimonial-carousel .owl-nav {
+        font-size: 35px; 
+    }
+
+    /* Contact form */
+    .contact .contact-form {
+        padding: 15px; 
+    }
+}
+
+
 /*** Navbar End ***/
 
 /*** Carousel Start ***/
