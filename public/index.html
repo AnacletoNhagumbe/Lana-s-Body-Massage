@@ -15,6 +15,7 @@
 
         <!-- Icon Font Stylesheet -->
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
         <link href="./img/lana's logo.jpeg" rel="icon" style="border-radius: 50%">
 
@@ -447,13 +448,13 @@
                         <div class="appointment-form p-5">
                             <p class="fs-4 text-uppercase text-primary">Get In Touch</p>
                             <h1 class="display-4 mb-4 text-white">Get Appointment</h1>
-                            <form>
+                            <form action="https://formspree.io/f/mvgplazg" method="POST">
                                 <div class="row gy-3 gx-4">
                                     <div class="col-lg-6">
-                                        <input type="text" class="form-control py-3 border-white bg-transparent text-white" placeholder="First Name">
+                                        <input type="text" name="name" class="form-control py-3 border-white bg-transparent text-white" placeholder="First Name">
                                     </div>
                                     <div class="col-lg-6">
-                                        <input type="email" class="form-control py-3 border-white bg-transparent text-white" placeholder="Email">
+                                        <input type="email" name="email" class="form-control py-3 border-white bg-transparent text-white" placeholder="Email">
                                     </div>
                                     <div class="col-lg-6">
                                         <select class="form-select py-3 border-white bg-transparent" aria-label="Default select example">
@@ -468,7 +469,7 @@
                                         </select>
                                     </div>
                                     <div class="col-lg-6">
-                                        <input type="date" class="form-control py-3 border-white bg-transparent">
+                                        <input type="date" name="date" class="form-control py-3 border-white bg-transparent">
                                     </div>
                                     <div class="col-lg-12">
                                         <textarea class="form-control border-white bg-transparent text-white" name="text" id="area-text" cols="30" rows="5" placeholder="Write Comments"></textarea>
@@ -729,7 +730,7 @@
                                         </div>
                                         <div class="col-lg-3">
                                             <div class="gallery-img">
-                                                <img class="img-fluid rounded w-100" src="./img/gallery-10.jpg" alt="">
+                                                <img class="img-fluid rounded w-100" src="./img/gallery-10.jpg" style="object-fit: cover;" alt="">
                                                 <div class="gallery-overlay p-4">
                                                     <h4 class="text-secondary">Skin Care</h4>
                                                 </div>
@@ -1284,10 +1285,10 @@
                         <div class="footer-item">
                             <h4 class="mb-4 text-white">Newsletter</h4>
                             <p class="text-white">Welcome to the latest edition of Lana's Body Massage Newsletter! As we move into the heart of summer, we’re excited to share some great updates, tips, and special offers with you. We hope you find this information both enjoyable and beneficial.</p>
-                            <div class="position-relative mx-auto rounded-pill">
+                            <!-- <div class="position-relative mx-auto rounded-pill">
                                 <input class="form-control rounded-pill border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Enter your email">
                                 <button type="button" class="btn btn-primary btn-primary-outline-0 rounded-pill position-absolute top-0 end-0 py-2 mt-2 me-2">SignUp</button>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-6 col-xl-3">
@@ -1306,8 +1307,8 @@
                         <div class="footer-item d-flex flex-column">
                             <h4 class="mb-4 text-white">Schedule</h4>
                             <p class="text-muted mb-0">Monday: <span class="text-white"> Closed</span></p>
-                            <p class="text-muted mb-0">Saturday: <span class="text-white"> 09:00 am – 06:00 pm</span></p>
-                            <p class="text-muted mb-0">Sunday: <span class="text-white"> 09:00 am – 06:00 pm</span></p>
+                            <p class="text-muted mb-0">Saturday: <span class="text-white"> 09:00am – 06:00pm</span></p>
+                            <p class="text-muted mb-0">Sunday: <span class="text-white"> 09:00am – 06:00pm</span></p>
                             <h4 class="my-4 text-white">Address</h4>
                             <p class="mb-0"><i class="fas fa-map-marker-alt text-secondary me-2"></i>02229 Isikwama St, Jabulani, Soweto, 1868</p>
                         </div>
@@ -1315,12 +1316,12 @@
                     <div class="col-md-6 col-lg-6 col-xl-3">
                         <div class="footer-item d-flex flex-column"> 
                             <h4 class="mb-4 text-white">Follow Us</h4>
-                            <a href="https:/www.facebook/Lana's"><i class="fas fa-angle-right me-2"></i>Faceboock</a>
-                            <a href="https:/www.instagram/3651lana"><i class="fas fa-angle-right me-2"></i>Instagram</a>
+                            <a href="https:/www.facebook.com/Lana's"><i class="fas fa-angle-right me-2"></i>Faceboock</a>
+                            <a href="https:/www.instagram.com/3651lana"><i class="fas fa-angle-right me-2"></i>Instagram</a>
                             <a href="https:/wa.me/+277123063"><i class="fas fa-angle-right me-2"></i>WhatsApp</a>
                             <h4 class="my-4 text-white">Contact Us</h4>
-                            <p class="mb-0" ><i class="fas fa-envelope text-secondary me-2"></i>Lana'studio@yahoo.com</p>
-                            <p class="mb-0"><i class="fas fa-phone text-secondary me-2"></i> (+27) 74 712 3063</p>
+                            <a href="mailto:Lana'studio@(yahoo.com) there!" class="text-light"><i class="fas fa-envelope text-primary me-2"></i>Lana'studio@yahoo.com</a>
+                            <a href="tel:+27747123063" class="me-4 text-light"><i class="fas fa-phone-alt text-primary me-2"></i>+27747123063</a>
                         </div>
                     </div>
                 </div>
@@ -1339,7 +1340,7 @@
                         <div class="d-flex justify-content-center">
                             <a href="https:/www.facebook.com/Lana's" class="btn btn-light btn-light-outline-0 btn-sm-square rounded-circle me-2"><i class="fab fa-facebook-f"></i></a>
                             <!--<a href="" class="btn btn-light btn-light-outline-0 btn-sm-square rounded-circle me-2"><i class="fab fa-twitter"></i></a>-->
-                            <a href="https:/www.instagram/3651lana" class="btn btn-light btn-light-outline-0 btn-sm-square rounded-circle me-2"><i class="fab fa-instagram"></i></a>
+                            <a href="https:/www.instagram.com/3651lana" class="btn btn-light btn-light-outline-0 btn-sm-square rounded-circle me-2"><i class="fab fa-instagram"></i></a>
                             <a href="https:/wa.me/+277123063" class="btn btn-light btn-light-outline-0 btn-sm-square rounded-circle me-0"><i class="fab fa-whatsapp"></i></a>
                         </div>
                     </div>
@@ -1366,7 +1367,7 @@
     <script src="lib/counterup/counterup.min.js"></script>
     <script src="lib/lightbox/js/lightbox.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-
+    
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
     </body>
