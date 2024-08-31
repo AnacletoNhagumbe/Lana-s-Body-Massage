@@ -615,8 +615,9 @@ body {
     background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, .2));
     object-fit: cover;
     border-radius: 10px;
-    height: 670px;
+
 }
+
 /*** Appointment End ***/
 
 /*** Counter Start ***/
@@ -678,9 +679,7 @@ body {
 
 .gallery .gallery-img img {
     transition: 0.5s;
-    height: 400px;
-    object-fit: cover;
-    object-position: center;
+
 }
 
 .gallery .gallery-img:hover img {
@@ -708,7 +707,7 @@ body {
     transition: 0.5s;
     opacity: 0;
     z-index: 2;
-    object-fit: cover;
+    
 }
 
 .gallery .gallery-img:hover .gallery-overlay,
@@ -829,15 +828,7 @@ body {
 }
 
 .testimonial .testimonial-item {
-    background: rgba(0, 0, 0, 0.4);
-    height: 450px;
-}
-
-.testimonial .testimonial-item .img {
-    border-radius: 50%;
-    object-fit: cover;
-    object-position: center;
-    height: 150px;
+    background: rgba(0, 0, 0, 0.4) ;
 }
 
 .testimonial .owl-carousel.testimonial-carousel {
@@ -866,12 +857,17 @@ body {
 .testimonial .owl-carousel.testimonial-carousel .owl-nav .owl-next:hover {
     color: var(--bs-primary);
 }
+
+.testimonial-item .rounded-circle img {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+    border-radius: 50%; 
+}
 /*** testimonial end ***/
 
 /*** Contact Start ***/
-#contact .height {
-    height: 130px;
-}
+
 
 .contact {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/appointment-background.jpg);
