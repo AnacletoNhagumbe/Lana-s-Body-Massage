@@ -376,7 +376,25 @@ body {
     }
 }
 
+/* Extra small devices (up to 320px) */
+@media (max-width: 320px) {
+    .navbar .navbar-nav .nav-link {
+        font-size: 10px;
+    }
 
+    .btn-square, .btn-sm-square, .btn-md-square, .btn-lg-square {
+        width: 30px;
+        height: 30px;
+    }
+
+    .services .services-item {
+        margin: 2px 0;
+    }
+
+    .contact .contact-form {
+        padding: 5px;
+    }
+}
 
 /*** Navbar End ***/
 
