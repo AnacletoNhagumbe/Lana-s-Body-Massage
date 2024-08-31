@@ -615,6 +615,7 @@ body {
     background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, .2));
     object-fit: cover;
     border-radius: 10px;
+    height: 670px;
 }
 /*** Appointment End ***/
 
@@ -677,6 +678,9 @@ body {
 
 .gallery .gallery-img img {
     transition: 0.5s;
+    height: 400px;
+    object-fit: cover;
+    object-position: center;
 }
 
 .gallery .gallery-img:hover img {
@@ -826,6 +830,14 @@ body {
 
 .testimonial .testimonial-item {
     background: rgba(0, 0, 0, 0.4);
+    height: 450px;
+}
+
+.testimonial .testimonial-item .img {
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    height: 150px;
 }
 
 .testimonial .owl-carousel.testimonial-carousel {
@@ -857,6 +869,10 @@ body {
 /*** testimonial end ***/
 
 /*** Contact Start ***/
+#contact .height {
+    height: 130px;
+}
+
 .contact {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/appointment-background.jpg);
     background-position: center center;
