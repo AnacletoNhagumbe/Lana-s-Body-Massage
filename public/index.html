@@ -167,7 +167,7 @@
                         <img src="./img/Lana's Footscrub.jpeg" class="img-fluid" alt="Image">
                         <div class="carousel-caption">
                             <div class="p-3" style="max-width: 900px;">
-                                <h4 class="text-primary text-uppercase mb-3" style="letter-spacing: 3px;">Lana's Body Massage</h4>
+                                <h4 class="text-primary text-uppercase mb-3" style="letter-spacing: 3px; color:aliceblue">Lana's Body Massage</h4>
                                 <h1 class="display-1 text-capitalize text-dark">Footscrub Massage</h1>
                                 <p class="mx-md-5 fs-4 px-5 mb-5 text-dark">A foot scrub massage combines exfoliation with a soothing massage to rejuvenate tired feet and improve overall foot health. This treatment is designed to cleanse, exfoliate, and massage the feet, leaving them feeling refreshed and revitalized.</p>
                                 <div class="d-flex align-items-center justify-content-center">
@@ -211,7 +211,7 @@
                                 </div>
                                 <div class="col-4">
                                     <div class="services-img d-flex align-items-center justify-content-center rounded">
-                                        <img src="./img/services-1.jpg" class="img-fluid rounded" alt="">
+                                        <img src="./img/services-1.jpg" class="img-fluid rounded" alt="image">
                                     </div>
                                 </div>
                             </div>
@@ -222,7 +222,7 @@
                             <div class="row align-items-center">
                                 <div class="col-4">
                                     <div class="services-img d-flex align-items-center justify-content-center rounded">
-                                        <img src="./img/holistic massage.jpg" class="img-fluid rounded" alt="" height="400px" width="400px">
+                                        <img src="./img/holistic massage.jpg" class="img-fluid rounded" alt="image" height="400px" width="400px">
                                     </div>
                                 </div>
                                 <div class="col-8">
@@ -247,7 +247,7 @@
                                 </div>
                                 <div class="col-4">
                                     <div class="services-img d-flex align-items-center justify-content-center rounded">
-                                        <img src="./img/Scrubs with Massage.jpg" class="img-fluid rounded" alt="">
+                                        <img src="./img/Scrubs with Massage.jpg" class="img-fluid rounded" alt="image">
                                     </div>
                                 </div>
                             </div>
@@ -258,7 +258,7 @@
                             <div class="row align-items-center">
                                 <div class="col-4">
                                     <div class="services-img d-flex align-items-center justify-content-center rounded">
-                                        <img src="./media/facial theraphy.jpg" class="img-fluid rounded" alt="">
+                                        <img src="./media/facial theraphy.jpg" class="img-fluid rounded" alt="image">
                                     </div>
                                 </div>
                                 <div class="col-8">
@@ -283,7 +283,7 @@
                                 </div>
                                 <div class="col-4">
                                     <div class="services-img d-flex align-items-center justify-content-center rounded">
-                                        <img src="./img/Face Massage.jpg" class="img-fluid rounded" alt="">
+                                        <img src="./img/Face Massage.jpg" class="img-fluid rounded" alt="image">
                                     </div>
                                 </div>
                             </div>
@@ -294,7 +294,7 @@
                             <div class="row align-items-center">
                                 <div class="col-4">
                                     <div class="services-img d-flex align-items-center justify-content-center rounded">
-                                        <img src="./img/Aroma therapy.jpg" class="img-fluid rounded" alt="">
+                                        <img src="./img/Aroma therapy.jpg" class="img-fluid rounded" alt="image">
                                     </div>
                                 </div>
                                 <div class="col-8">
@@ -319,7 +319,7 @@
                                 </div>
                                 <div class="col-4">
                                     <div class="services-img d-flex align-items-center justify-content-center rounded">
-                                        <img src="./img/Sports Massage.jpg" class="img-fluid rounded" alt="">
+                                        <img src="./img/Sports Massage.jpg" class="img-fluid rounded" alt="image">
                                     </div>
                                 </div>
                             </div>
@@ -330,7 +330,7 @@
                             <div class="row align-items-center">
                                 <div class="col-4">
                                     <div class="services-img d-flex align-items-center justify-content-center rounded">
-                                        <img src="./img/stone therapy.jpg" class="img-fluid rounded" alt="">
+                                        <img src="./img/stone therapy.jpg" class="img-fluid rounded" alt="image">
                                     </div>
                                 </div>
                                 <div class="col-8">
@@ -448,13 +448,14 @@
                         <div class="appointment-form p-5">
                             <p class="fs-4 text-uppercase text-primary">Get In Touch</p>
                             <h1 class="display-4 mb-4 text-white">Get Appointment</h1>
-                            <form action="https://formspree.io/f/mvgplazg" method="POST">
+                            <form id="contactForm" action="https://formspree.io/f/mvgplazg"
+                            method="POST">
                                 <div class="row gy-3 gx-4">
                                     <div class="col-lg-6">
-                                        <input type="text" name="name" class="form-control py-3 border-white bg-transparent text-white" placeholder="First Name">
+                                        <input type="text" name="name" id="name" class="form-control py-3 border-white bg-transparent text-white" placeholder="First Name">
                                     </div>
                                     <div class="col-lg-6">
-                                        <input type="email" name="email" class="form-control py-3 border-white bg-transparent text-white" placeholder="Email">
+                                        <input type="email" id="email" name="email" class="form-control py-3 border-white bg-transparent text-white" placeholder="Email">
                                     </div>
                                     <div class="col-lg-6">
                                         <select class="form-select py-3 border-white bg-transparent" aria-label="Default select example">
@@ -469,15 +470,16 @@
                                         </select>
                                     </div>
                                     <div class="col-lg-6">
-                                        <input type="date" name="date" class="form-control py-3 border-white bg-transparent">
+                                        <input type="date" id="date" name="date" class="form-control py-3 border-white bg-transparent">
                                     </div>
                                     <div class="col-lg-12">
                                         <textarea class="form-control border-white bg-transparent text-white" name="text" id="area-text" cols="30" rows="5" placeholder="Write Comments"></textarea>
                                     </div>
                                     <div class="col-lg-12">
-                                        <button type="button" class="btn btn-primary btn-primary-outline-0 w-100 py-3 px-5">SUBMIT NOW</button>
+                                        <button id="my-form-button">Submit</button>
                                     </div>
                                 </div>
+                                <p id="my-form-status"></p>
                             </form>
                         </div>
                     </div>
@@ -633,7 +635,7 @@
                                         </div>
                                         <div class="col-lg-3">
                                             <div class="gallery-img">
-                                                <img class="img-fluid rounded w-100" src="./media/scrub massage 1.jpg" alt="">
+                                                <img class="img-fluid rounded w-100" src="./media/scrub massage 1.jpg" alt="image">
                                                 <div class="gallery-overlay p-4">
                                                     <h4 class="text-secondary">Scrub Massage</h4>
                                                 </div>
@@ -645,7 +647,7 @@
                                         <div class="col-lg-3">
                                             <div class="gallery-img">
                                                 <img class="img-fluid rounded w-100" src="./img/Hot Stone 1.jpeg" height="400px" width="45
-                                                0px" alt="">
+                                                0px" alt="image">
                                                 <div class="gallery-overlay p-4">
                                                     <h4 class="text-secondary">Hot Stone</h4>
                                                 </div>
@@ -656,7 +658,7 @@
                                         </div>
                                         <div class="col-lg-3">
                                             <div class="gallery-img">
-                                                <img class="img-fluid rounded w-100" src="./media/Face Massage.jpg" alt="">
+                                                <img class="img-fluid rounded w-100" src="./media/Face Massage.jpg" alt="image">
                                                 <div class="gallery-overlay p-4">
                                                     <h4 class="text-secondary">Face Massage</h4>
                                                 </div>
@@ -667,7 +669,7 @@
                                         </div>
                                         <div class="col-lg-3">
                                             <div class="gallery-img">
-                                                <img class="img-fluid rounded w-100" src="./media/face theraphy4.jpg" alt="">
+                                                <img class="img-fluid rounded w-100" src="./media/face theraphy4.jpg" alt="image">
                                                 <div class="gallery-overlay p-4">
                                                     <h4 class="text-secondary">Skin Care</h4>
                                                 </div>
@@ -678,7 +680,7 @@
                                         </div>
                                         <div class="col-lg-3">
                                             <div class="gallery-img">
-                                                <img class="img-fluid rounded w-100" src="./media/scrub massage 6.jpg" alt="">
+                                                <img class="img-fluid rounded w-100" src="./media/scrub massage 6.jpg" alt="image">
                                                 <div class="gallery-overlay p-4">
                                                     <h4 class="text-secondary">Scrub Massage</h4>
                                                 </div>
@@ -689,7 +691,7 @@
                                         </div>
                                         <div class="col-lg-3">
                                             <div class="gallery-img">
-                                                <img class="img-fluid rounded w-100" src="./img/Foot 2.jpeg" alt="">
+                                                <img class="img-fluid rounded w-100" src="./img/Foot 2.jpeg" alt="image">
                                                 <div class="gallery-overlay p-4">
                                                     <h4 class="text-secondary">Hot Stone</h4>
                                                 </div>
@@ -700,7 +702,7 @@
                                         </div>
                                         <div class="col-lg-3">
                                             <div class="gallery-img">
-                                                <img class="img-fluid rounded w-100" src="./img/gallery-8.jpg" alt="">
+                                                <img class="img-fluid rounded w-100" src="./img/gallery-8.jpg" alt="image">
                                                 <div class="gallery-overlay p-4">
                                                     <h4 class="text-secondary">Face Massage</h4>
                                                 </div>
@@ -719,7 +721,7 @@
                                     <div class="row g-4">
                                         <div class="col-lg-3">
                                             <div class="gallery-img">
-                                                <img class="img-fluid rounded w-100" src="./img/gallery-9.jpg" alt="">
+                                                <img class="img-fluid rounded w-100" src="./img/gallery-9.jpg" alt="image">
                                                 <div class="gallery-overlay p-4">
                                                     <h4 class="text-secondary">Skin Care</h4>
                                                 </div>
@@ -730,7 +732,7 @@
                                         </div>
                                         <div class="col-lg-3">
                                             <div class="gallery-img">
-                                                <img class="img-fluid rounded w-100" src="./img/gallery-10.jpg" style="object-fit: cover;" alt="">
+                                                <img class="img-fluid rounded w-100" src="./img/gallery-10.jpg" style="object-fit: cover;" alt="image">
                                                 <div class="gallery-overlay p-4">
                                                     <h4 class="text-secondary">Skin Care</h4>
                                                 </div>
@@ -741,7 +743,7 @@
                                         </div>
                                         <div class="col-lg-3">
                                             <div class="gallery-img">
-                                                <img class="img-fluid rounded w-100" src="./media/Skin care (2).jpg" alt="">
+                                                <img class="img-fluid rounded w-100" src="./media/Skin care (2).jpg" alt="image">
                                                 <div class="gallery-overlay p-4">
                                                     <h4 class="text-secondary">Skin Care</h4>
                                                 </div>
@@ -752,7 +754,7 @@
                                         </div>
                                         <div class="col-lg-3">
                                             <div class="gallery-img">
-                                                <img class="img-fluid rounded w-100" src="./img/gallery-1.jpg" alt="">
+                                                <img class="img-fluid rounded w-100" src="./img/gallery-1.jpg" alt="image">
                                                 <div class="gallery-overlay p-4">
                                                     <h4 class="text-secondary">Skin Care</h4>
                                                 </div>
@@ -771,7 +773,7 @@
                                     <div class="row g-4">
                                         <div class="col-lg-3">
                                             <div class="gallery-img">
-                                                <img class="img-fluid rounded w-100" src="./media/scrub massage 1.jpg" alt="">
+                                                <img class="img-fluid rounded w-100" src="./media/scrub massage 1.jpg" alt="image">
                                                 <div class="gallery-overlay p-4">
                                                     <h4 class="text-secondary">Scrub Massage</h4>
                                                 </div>
@@ -782,7 +784,7 @@
                                         </div>
                                         <div class="col-lg-3">
                                             <div class="gallery-img">
-                                                <img class="img-fluid rounded w-100" src="./media/scrub massage 3.jpg" alt="">
+                                                <img class="img-fluid rounded w-100" src="./media/scrub massage 3.jpg" alt="image">
                                                 <div class="gallery-overlay p-4">
                                                     <h4 class="text-secondary">Scrub Massage</h4>
                                                 </div>
@@ -793,7 +795,7 @@
                                         </div>
                                         <div class="col-lg-3">
                                             <div class="gallery-img">
-                                                <img class="img-fluid rounded w-100" src="./media/scrub massage4.jpg" alt="">
+                                                <img class="img-fluid rounded w-100" src="./media/scrub massage4.jpg" alt="image">
                                                 <div class="gallery-overlay p-4">
                                                     <h4 class="text-secondary">Scrub Massage</h4>
                                                 </div>
@@ -804,7 +806,7 @@
                                         </div>
                                         <div class="col-lg-3">
                                             <div class="gallery-img">
-                                                <img class="img-fluid rounded w-100" src="./img/gallery-6.jpg" alt="">
+                                                <img class="img-fluid rounded w-100" src="./img/gallery-6.jpg" alt="image">
                                                 <div class="gallery-overlay p-4">
                                                     <h4 class="text-secondary">Scrub Massage</h4>
                                                 </div>
@@ -823,7 +825,7 @@
                                     <div class="row g-4">
                                         <div class="col-lg-3">
                                             <div class="gallery-img">
-                                                <img class="img-fluid rounded w-100" src="./img/Hot Stone 3.jpeg" alt="">
+                                                <img class="img-fluid rounded w-100" src="./img/Hot Stone 3.jpeg" alt="hot stone">
                                                 <div class="gallery-overlay p-4">
                                                     <h4 class="text-secondary">Hot Stone</h4>
                                                 </div>
@@ -834,7 +836,7 @@
                                         </div>
                                         <div class="col-lg-3">
                                             <div class="gallery-img">
-                                                <img class="img-fluid rounded w-100" src="./media/stone massage1.jpg" alt="">
+                                                <img class="img-fluid rounded w-100" src="./media/stone massage1.jpg" alt="stone massage">
                                                 <div class="gallery-overlay p-4">
                                                     <h4 class="text-secondary">Hot Stone</h4>
                                                 </div>
@@ -845,7 +847,7 @@
                                         </div>
                                         <div class="col-lg-3">
                                             <div class="gallery-img">
-                                                <img class="img-fluid rounded w-100" src="./media/stone massage3.jpg" alt="">
+                                                <img class="img-fluid rounded w-100" src="./media/stone massage3.jpg" alt="image">
                                                 <div class="gallery-overlay p-4">
                                                     <h4 class="text-secondary">Hot Stone</h4>
                                                 </div>
@@ -856,7 +858,7 @@
                                         </div>
                                         <div class="col-lg-3">
                                             <div class="gallery-img">
-                                                <img class="img-fluid rounded w-100" src="./img/gallery-7.jpg" alt="">
+                                                <img class="img-fluid rounded w-100" src="./img/gallery-7.jpg" alt="image">
                                                 <div class="gallery-overlay p-4">
                                                     <h4 class="text-secondary">Hot Stone</h4>
                                                 </div>
@@ -875,7 +877,7 @@
                                     <div class="row g-4">
                                         <div class="col-lg-3">
                                             <div class="gallery-img">
-                                                <img class="img-fluid rounded w-100" src="./img/gallery-4.jpg" alt="">
+                                                <img class="img-fluid rounded w-100" src="./img/gallery-4.jpg" alt="image">
                                                 <div class="gallery-overlay p-4">
                                                     <h4 class="text-secondary">Face Massage</h4>
                                                 </div>
@@ -886,7 +888,7 @@
                                         </div>
                                         <div class="col-lg-3">
                                             <div class="gallery-img">
-                                                <img class="img-fluid rounded w-100" src="./media/face massage 2.jpg" alt="">
+                                                <img class="img-fluid rounded w-100" src="./media/face massage 2.jpg" alt="image">
                                                 <div class="gallery-overlay p-4">
                                                     <h4 class="text-secondary">Face Massage</h4>
                                                 </div>
@@ -897,7 +899,7 @@
                                         </div>
                                         <div class="col-lg-3">
                                             <div class="gallery-img">
-                                                <img class="img-fluid rounded w-100" src="./img/gallery-8.jpg" alt="">
+                                                <img class="img-fluid rounded w-100" src="./img/gallery-8.jpg" alt="image">
                                                 <div class="gallery-overlay p-4">
                                                     <h4 class="text-secondary">Face Massage</h4>
                                                 </div>
@@ -908,7 +910,7 @@
                                         </div>
                                         <div class="col-lg-3">
                                             <div class="gallery-img">
-                                                <img class="img-fluid rounded w-100" src="./img/gallery-14.jpg" alt="">
+                                                <img class="img-fluid rounded w-100" src="./img/gallery-14.jpg" alt="image">
                                                 <div class="gallery-overlay p-4">
                                                     <h4 class="text-secondary">Face Massage</h4>
                                                 </div>
@@ -1127,7 +1129,7 @@
                             <div class="col-4">
                                 <div class="d-flex flex-column mx-auto">
                                     <div class="rounded-circle mb-4" style="border: dashed; border-color: var(--bs-white);">
-                                        <img src="./img/Ouma.jpeg" class="img-fluid rounded-circle" alt="">
+                                        <img src="./img/Ouma.jpeg" class="img-fluid rounded-circle" alt="image">
                                     </div>
                                     <div class="text-center">
                                         <h4 class="mb-2 text-primary">Ouma</h4>
@@ -1158,7 +1160,7 @@
                             <div class="col-4">
                                 <div class="d-flex flex-column mx-auto">
                                     <div class="rounded-circle mb-4" style="border: dashed; border-color: var(--bs-white);">
-                                        <img src="./img/Linda.jpeg" class="img-fluid rounded-circle" alt="">
+                                        <img src="./img/Linda.jpeg" class="img-fluid rounded-circle" alt="image">
                                     </div>
                                     <div class="text-center">
                                         <h4 class="mb-2 text-primary">Linda</h4>
@@ -1189,7 +1191,7 @@
                             <div class="col-4">
                                 <div class="d-flex flex-column mx-auto">
                                     <div class="rounded-circle mb-4" style="border: dashed; border-color: var(--bs-white);">
-                                        <img src="./img/Phiwo.jpeg" width="912px" height="912px" style="border-radius: 50%" class="img-fluid rounded-circle" alt="">
+                                        <img src="./img/Phiwo.jpeg" width="912px" height="912px" style="border-radius: 50%" class="img-fluid rounded-circle" alt="image">
                                     </div>
                                     <div class="text-center">
                                         <h4 class="mb-2 text-primary">Phiwo</h4>
@@ -1262,7 +1264,7 @@
                             style="height: 450px; margin-bottom: -6px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3578.2073392811267!2d27.853627875742745!3d-26.254933366042618!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e95a753c14fb3c1%3A0x6525cdd4f1ee6496!2sJabulani%20Sports%20Complex!5e0!3m2!1sen!2sza!4v1724317461195!5m2!1sen!2sza" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" 
                             loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
-                        <div class=" text-center p-4 rounded-bottom bg-primary">
+                        <div class="text-center p-4 rounded-bottom bg-primary">
                             <h4 class="text-white fw-bold">Follow Us</h4>
                             <div class="d-flex align-items-center justify-content-center">
                                 <a href="https:/www.facebook/Lana's" class="btn btn-light btn-light-outline-0 btn-square rounded-circle me-3"><i class="fab fa-facebook-f"></i></a>
@@ -1370,6 +1372,51 @@
     
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <script src="form-script.js">
+    document.getElementById('my-form-button').addEventListener('click', function() {
+        // Clear previous status message
+        const statusElement = document.getElementById('my-form-status');
+        statusElement.textContent = '';
+        statusElement.style.color = 'red';
+
+        // Get form elements
+        const form = document.getElementById('contactForm');
+        const name = document.getElementById('name').value.trim();
+        const email = document.getElementById('email').value.trim();
+        const service = document.getElementById('service').value;
+        const date = document.getElementById('date').value.trim();
+        const comments = document.getElementById('area-text').value.trim();
+
+        let isValid = true;
+
+        // Validate fields
+        if (!name) {
+            statusElement.textContent += 'Name is required. ';
+            isValid = false;
+        }
+
+        if (!email) {
+            statusElement.textContent += 'Email is required. ';
+            isValid = false;
+        }
+
+        if (!service) {
+            statusElement.textContent += 'Please select a service. ';
+            isValid = false;
+        }
+
+        if (!date) {
+            statusElement.textContent += 'Date is required. ';
+            isValid = false;
+        }
+
+        // If all fields are valid, submit the form
+        if (isValid) {
+            form.submit();
+        }
+    });
+    </script>
+
     </body>
 
 </html>
