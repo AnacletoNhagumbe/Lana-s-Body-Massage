@@ -1,3 +1,12 @@
+:root {
+    --bs-blue: #007bff; 
+    --bs-pink: #f06595; 
+    --bs-orange: #fd7e14; 
+    --bs-primary: #007bff; 
+    --bs-secondary: #6c757d; 
+    --bs-white: #ffffff; 
+    --bs-dark: #343a40; 
+}
 
 /*** Spinner Start ***/
 #spinner {
@@ -67,20 +76,22 @@
 .btn-primary-outline-0 {
     border: 0;
     color: var(--bs-white) !important;
+    background-color: var(--bs-blue);
 }
 
 .btn-light-outline-0 {
     border: 0;
-    color: var(--bs-primary) !important;
+    color: var(--bs-white) !important;
+    background-color: var(--bs-blue);
 }
 
 .btn-primary-outline-0:hover {
-    background: var(--bs-secondary) !important;
+    background: var(--bs-purple) !important;
     color: var(--bs-white) !important;
 }
 
 .btn-light-outline-0:hover {
-    background: var(--bs-secondary) !important;
+    background: var(--bs-purple) !important;
     color: var(--bs-white) !important;
 }
 
@@ -92,7 +103,11 @@
 
 .topbar {
     padding: 10px 0;
-    background: var(--bs-secondary) !important;
+    background: var(--bs-purple) !important;
+}
+
+body {
+    background: linear-gradient(to bottom, #f3e8f0, #d3c0eb);
 }
 
 /*** Topbar End ***/
@@ -134,7 +149,7 @@
 }
 
 .dropdown .dropdown-menu a:hover {
-    background: var(--bs-secondary);
+    background: var(--bs-white);
     color: var(--bs-primary);
 }
 
@@ -290,6 +305,78 @@
     }
 }
 
+/* Mobile devices (up to 480px) */
+@media (max-width: 480px) {
+    /* Navbar adjustments */
+    .navbar .navbar-nav .nav-link {
+        padding: 6px 8px;
+        font-size: 12px;
+    }
+
+    .navbar .navbar-toggler {
+        display: flex;
+    }
+
+    .navbar .navbar-collapse {
+        display: none;
+    }
+
+    .navbar .navbar-collapse.show {
+        display: block;
+    }
+
+    /* Dropdown menu adjustments */
+    .navbar .dropdown-menu {
+        position: static;
+        transform: none;
+        visibility: visible;
+        opacity: 1;
+        background: var(--bs-light);
+    }
+
+    /* Carousel adjustments */
+    .carousel-item img {
+        height: auto;
+    }
+
+    /* Button adjustments */
+    .btn-square, .btn-sm-square, .btn-md-square, .btn-lg-square {
+        width: 36px;
+        height: 36px;
+    }
+
+    /* Topbar adjustments */
+    .sticky-top {
+        padding: 4px 0;
+    }
+
+    .back-to-top {
+        bottom: 15px;
+        right: 15px;
+    }
+
+    /* Services items */
+    .services .services-item {
+        margin: 5px 0;
+    }
+
+    /* Contact form */
+    .contact .contact-form {
+        padding: 8px;
+    }
+
+    /* Team section adjustments */
+    .team .team-item .team-social {
+        top: 10px;
+        left: 10px;
+    }
+
+    .team .team-item .team-text {
+        padding: 5px;
+    }
+}
+
+
 
 /*** Navbar End ***/
 
@@ -367,7 +454,7 @@
 }
 
 .services .services-item:hover {
-    background: var(--bs-primary) !important;
+    background: var(--bs-orange) !important;
     border-color: var(--bs-secondary) !important;
 }
 
@@ -808,3 +895,21 @@
     background: var(--bs-dark) !important;
 }
 /*** copyright end ***/
+
+/* Get Appointment */
+#my-form-button {
+    background-color: blue; 
+    color: white; 
+    border: 100; 
+    padding: 10px 20px; 
+    font-size: 16px; 
+    cursor: pointer; 
+    border-radius: 100px; 
+    transition: background-color 0.3s ease, color 0.3s ease; 
+}
+
+#my-form-button:hover {
+    background-color: var(--bs-purple); 
+    color: white; 
+}
+/* Get Appointment End */
