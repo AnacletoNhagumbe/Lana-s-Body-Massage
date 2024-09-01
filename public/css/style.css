@@ -6,6 +6,7 @@
     --bs-secondary: #6c757d; 
     --bs-white: #ffffff; 
     --bs-dark: #343a40; 
+    --bs-purple: #6f42c1;
 }
 
 /*** Spinner Start ***/
@@ -939,7 +940,7 @@ body {
 #my-form-button {
     background-color: blue; 
     color: white; 
-    border: 100; 
+    border: 0; 
     padding: 10px 20px; 
     font-size: 16px; 
     cursor: pointer; 

@@ -9,8 +9,9 @@
     "rewrites": [
       {
         "source": "**",
-        "destination": "public/index.html"
+        "destination": "/index.html"
       }
-    ]
+    ],
+    "errorPage": "404.html"
   }
 }
