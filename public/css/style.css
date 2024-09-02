@@ -26,15 +26,15 @@
 
 .back-to-top {
     position: fixed;
-    right: 30px;
-    bottom: 30px;
+    right: 25px;
+    bottom: 25px;
     display: flex;
     width: 45px;
     height: 45px;
     align-items: center;
     justify-content: center;
     transition: 0.5s;
-    z-index: 99;
+    z-index: 9999;
 }
 
 /*** Button Start ***/
@@ -222,8 +222,9 @@ body {
     }
 
     .back-to-top {
-        bottom: 20px; 
-        right: 20px;
+        bottom: 10px; 
+        right: 10px;
+        display: block;
     }
 
     /* Services items */
@@ -280,8 +281,11 @@ body {
     }
 
     .back-to-top {
-        bottom: 25px; 
-        right: 25px;
+        bottom: 15px; 
+        right: 15px; 
+        width: 55px; 
+        height: 55px; 
+        display: block;
     }
 
     /* Services items */
@@ -352,8 +356,11 @@ body {
     }
 
     .back-to-top {
-        bottom: 15px;
-        right: 15px;
+        bottom: 7px; 
+        right: 7px; 
+        width: 40px; 
+        height: 40px; 
+        display: block;
     }
 
     /* Services items */
@@ -394,6 +401,14 @@ body {
 
     .contact .contact-form {
         padding: 5px;
+    }
+
+    .back-to-top {
+        bottom: 5px; 
+        right: 5px; 
+        width: 35px; 
+        height: 35px; 
+        display: block;
     }
 }
 
