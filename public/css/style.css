@@ -509,10 +509,20 @@ body {
 
 .services .services-item .services-img {
     overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 250px;
 }
 
 .services .services-item .services-img img {
     transition: 0.5s;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .services .services-item .services-img img:hover {
@@ -637,12 +647,14 @@ body {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+    display: flex;
 }
 
 .appointment .appointment-form {
     background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, .4));
     object-fit: cover;
     border-radius: 10px;
+    height: 100%;
 }
 
 .appointment .appointment-time {
@@ -650,6 +662,13 @@ body {
     object-fit: cover;
     border-radius: 10px;
 
+}
+
+.appointments-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); 
+    gap: 1rem;
+    height: 100px;
 }
 
 /*** Appointment End ***/
@@ -868,6 +887,21 @@ body {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+    padding: 2rem;
+}
+
+.testimonial-item {
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1rem; 
+    height: 600px; 
+    width: 100%; 
+    max-width: 400px; 
 }
 
 .testimonial .testimonial-item {
@@ -901,6 +935,12 @@ body {
     color: var(--bs-primary);
 }
 
+.testimonial-item .rounded-circle {
+    width: 120px; 
+    height: 120px; 
+    margin-bottom: 1rem;
+}    
+
 .testimonial-item .rounded-circle img {
     width: 100%; 
     height: 100%; 
@@ -917,6 +957,15 @@ body {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+    padding: 2rem;
+}
+
+.card-content {
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 50px; 
 }
 
 .contact .contact-form {
