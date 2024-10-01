@@ -136,6 +136,14 @@ body {
     margin-left: 8px;
 }
 
+.navbar .navbar-brand img {
+    width: 5rem;
+    height: 5rem;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%
+}
+
 @media (min-width: 1200px) {
     .navbar .nav-item .dropdown-menu {
         display: block;
@@ -442,6 +450,13 @@ body {
     background-size: cover;
 }
 
+.carousel-item .carousel-caption h4 {
+    text-shadow: 1px 1px 1px var(--bs-dark), -1px -1px 2px var(--bs-dark);
+    color: aliceblue;
+    font-size: 30px;
+    letter-spacing: 3px;
+}
+
 .carousel-control-prev,
 .carousel-control-next {
     opacity: 0;
@@ -509,20 +524,10 @@ body {
 
 .services .services-item .services-img {
     overflow: hidden;
-    position: relative;
-    width: 100%;
-    height: 250px;
 }
 
 .services .services-item .services-img img {
     transition: 0.5s;
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
 }
 
 .services .services-item .services-img img:hover {
@@ -647,28 +652,26 @@ body {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    display: flex;
 }
 
 .appointment .appointment-form {
     background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, .4));
     object-fit: cover;
     border-radius: 10px;
-    height: 100%;
+}
+
+.appointment .appointment-form .message .text {
+    background-color: #ffffff;
+    padding: 20px;
+    font-size: 1.75rem;
+    font-weight: 500;
 }
 
 .appointment .appointment-time {
     background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, .2));
     object-fit: cover;
     border-radius: 10px;
-
-}
-
-.appointments-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); 
-    gap: 1rem;
-    height: 100px;
+    height: 650px;
 }
 
 /*** Appointment End ***/
@@ -887,25 +890,11 @@ body {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 2rem;
-}
-
-.testimonial-item {
-    background: rgba(0, 0, 0, 0.4);
-    border-radius: 10px;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 1rem; 
-    height: 600px; 
-    width: 100%; 
-    max-width: 400px; 
 }
 
 .testimonial .testimonial-item {
     background: rgba(0, 0, 0, 0.4) ;
+    height: 450px;
 }
 
 .testimonial .owl-carousel.testimonial-carousel {
@@ -935,37 +924,25 @@ body {
     color: var(--bs-primary);
 }
 
-.testimonial-item .rounded-circle {
-    width: 120px; 
-    height: 120px; 
-    margin-bottom: 1rem;
-}    
-
-.testimonial-item .rounded-circle img {
-    width: 100%; 
-    height: 100%; 
-    object-fit: cover; 
-    border-radius: 50%; 
+.testimonial-item .rounded-circle .img {
+    width: 100px; 
+    height: 100px; 
+    object-fit: cover;
+    border-radius: 50%;
 }
 /*** testimonial end ***/
 
 /*** Contact Start ***/
 
+#contact .contact-cards {
+    height: 130px;
+}
 
 .contact {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/appointment-background.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 2rem;
-}
-
-.card-content {
-    flex: 1; 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    border-radius: 50px; 
 }
 
 .contact .contact-form {
